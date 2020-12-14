@@ -19,16 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a7c9e70-c9f0-4f52-b640-de087aebe972" name="Default Changelist" comment="6-4 ホーム画面のクイズカテゴリーAPI連携を実装する">
-      <change afterPath="$PROJECT_DIR$/app/Answer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/QuizController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Quiz.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_14_222733_create_quizzes_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_14_223744_create_answers_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/AnswerTableSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/QuizTableSeeder.php" afterDir="false" />
+    <list default="true" id="5a7c9e70-c9f0-4f52-b640-de087aebe972" name="Default Changelist" comment="6-5 クイズ画面のクイズ出題API連携を実装する -Laravel側の実装-">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/quiz.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/quiz.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/page/Quiz.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/page/Quiz.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,7 +170,7 @@
       <workItem from="1607416546072" duration="486000" />
       <workItem from="1607417084562" duration="1186000" />
       <workItem from="1607418401423" duration="6061000" />
-      <workItem from="1607772884162" duration="11881000" />
+      <workItem from="1607772884162" duration="12515000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1607426915774</created>
@@ -240,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607937864090</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="6-5 クイズ画面のクイズ出題API連携を実装する -Laravel側の実装-">
+      <created>1607953635017</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1607953635017</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -268,7 +270,8 @@
     <MESSAGE value="6-2 実装準備Databaseの設定" />
     <MESSAGE value="6-3 ホーム画面のお知らせAPI連携を実装する" />
     <MESSAGE value="6-4 ホーム画面のクイズカテゴリーAPI連携を実装する" />
-    <option name="LAST_COMMIT_MESSAGE" value="6-4 ホーム画面のクイズカテゴリーAPI連携を実装する" />
+    <MESSAGE value="6-5 クイズ画面のクイズ出題API連携を実装する -Laravel側の実装-" />
+    <option name="LAST_COMMIT_MESSAGE" value="6-5 クイズ画面のクイズ出題API連携を実装する -Laravel側の実装-" />
   </component>
   <component name="WindowStateProjectService">
     <state width="866" height="303" key="GridCell.Tab.0.bottom" timestamp="1607772854749">
@@ -287,10 +290,10 @@
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state width="866" height="303" key="GridCell.Tab.0.right/0.23.1792.1097@0.23.1792.1097" timestamp="1607772854749" />
-    <state x="938" y="311" key="Vcs.Push.Dialog.v2" timestamp="1607937873958">
+    <state x="938" y="311" key="Vcs.Push.Dialog.v2" timestamp="1607953666435">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state x="938" y="311" key="Vcs.Push.Dialog.v2/0.23.1792.1097@0.23.1792.1097" timestamp="1607937873958" />
+    <state x="938" y="311" key="Vcs.Push.Dialog.v2/0.23.1792.1097@0.23.1792.1097" timestamp="1607953666435" />
     <state x="988" y="268" width="670" height="676" key="search.everywhere.popup" timestamp="1607774823556">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
