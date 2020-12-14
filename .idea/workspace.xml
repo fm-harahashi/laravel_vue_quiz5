@@ -19,7 +19,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a7c9e70-c9f0-4f52-b640-de087aebe972" name="Default Changelist" comment="6-1 実装準備Axiosのインストール" />
+    <list default="true" id="5a7c9e70-c9f0-4f52-b640-de087aebe972" name="Default Changelist" comment="6-2 実装準備Databaseの設定">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/InformationController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Information.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_13_140523_create_informations_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/InformationTableSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/page/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/page/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -165,7 +174,7 @@
       <workItem from="1607416546072" duration="486000" />
       <workItem from="1607417084562" duration="1186000" />
       <workItem from="1607418401423" duration="6061000" />
-      <workItem from="1607772884162" duration="6197000" />
+      <workItem from="1607772884162" duration="8144000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1607426915774</created>
@@ -209,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607867474156</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="6-2 実装準備Databaseの設定">
+      <created>1607867818450</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1607867818450</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -234,7 +250,8 @@
     <MESSAGE value="5-1 Vue Routerの導入までの全て" />
     <MESSAGE value="5-2 ホーム画面・クイズ画面のSPA化" />
     <MESSAGE value="6-1 実装準備Axiosのインストール" />
-    <option name="LAST_COMMIT_MESSAGE" value="6-1 実装準備Axiosのインストール" />
+    <MESSAGE value="6-2 実装準備Databaseの設定" />
+    <option name="LAST_COMMIT_MESSAGE" value="6-2 実装準備Databaseの設定" />
   </component>
   <component name="WindowStateProjectService">
     <state width="866" height="303" key="GridCell.Tab.0.bottom" timestamp="1607772854749">
@@ -253,10 +270,10 @@
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state width="866" height="303" key="GridCell.Tab.0.right/0.23.1792.1097@0.23.1792.1097" timestamp="1607772854749" />
-    <state x="938" y="311" key="Vcs.Push.Dialog.v2" timestamp="1607867482620">
+    <state x="938" y="311" key="Vcs.Push.Dialog.v2" timestamp="1607867843827">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state x="938" y="311" key="Vcs.Push.Dialog.v2/0.23.1792.1097@0.23.1792.1097" timestamp="1607867482620" />
+    <state x="938" y="311" key="Vcs.Push.Dialog.v2/0.23.1792.1097@0.23.1792.1097" timestamp="1607867843827" />
     <state x="988" y="268" width="670" height="676" key="search.everywhere.popup" timestamp="1607774823556">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
