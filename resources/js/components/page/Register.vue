@@ -10,7 +10,6 @@
                             <div class="form-group has-error" v-if="errors.length !== 0">
                                 <div class="alert alert-danger text-center">
                                     ユーザー登録実行時にエラーが発生しました
-                                    <div v-for="(error, key, index) in errors" :key="index">{{key}}:{{error}}</div>
                                 </div>
                             </div>
 
