@@ -54,11 +54,22 @@ class QuizController extends AdminController
     protected function detail($id)
     {
         $show = new Show(Quiz::findOrFail($id));
+
+        $show->answer('Answer information', function ($answer) {
+            $answer->id();
+            $answer->answer_1();
+            $answer->answer_2();
+            $answer->answer_3();
+            $answer->answer_4();
+            $answer->commentary();
+        });
+
+        $show->category('Category information', function ($category) {
+            $category->name();
+        });
         $show->field('id', __('Id'));
         $show->field('title', __('Title'));
         $show->field('image_src', __('Image src'));
-        $show->field('answers_id', __('Answers id'));
-        $show->field('categories_id', __('Categories id'));
         $show->field('created_at', __('Created at'));
         $show->field('updated_at', __('Updated at'));
 
