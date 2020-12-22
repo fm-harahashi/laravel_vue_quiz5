@@ -54,11 +54,22 @@ class QuizController extends AdminController
     protected function detail($id)
     {
         $show = new Show(Quiz::findOrFail($id));
+
+        $show->answer('Answer information', function ($answer) {
+            $answer->id();
+            $answer->answer_1();
+            $answer->answer_2();
+            $answer->answer_3();
+            $answer->answer_4();
+            $answer->commentary();
+        });
+
+        $show->category('Category information', function ($category) {
+            $category->name();
+        });
         $show->field('id', __('Id'));
         $show->field('title', __('Title'));
         $show->field('image_src', __('Image src'));
-        $show->field('answers_id', __('Answers id'));
-        $show->field('categories_id', __('Categories id'));
         $show->field('created_at', __('Created at'));
         $show->field('updated_at', __('Updated at'));
 
@@ -72,12 +83,28 @@ class QuizController extends AdminController
      */
     protected function form()
     {
+        $answersLatestId = Answer::latest('id')->first();
+        // Answerテーブル最新IDの次のID
+        $answersLatestNextId = $answersLatestId->id + 1;
 
         $form = new Form(new Quiz);
         $form->textarea('title', __('Title'));
-        $form->text('image_src', __('Image src'));
-        $form->number('answers_id', __('Answers id'));
-        $form->number('categories_id', __('Categories id'));
+
+        $form->select('answers_id', 'Answer_id(デフォルトのまま変更しないでください)')->options(function () {
+            return (new Answer)->findAnswersSelectBoxInAdmin();
+        })->default($answersLatestNextId)->rules('required'); // デフォルト値はAnswerテーブル最新IDの次のID
+        $form->select('categories_id', 'カテゴリー')->options(function () {
+            return (new Category)->findCategorySelectBoxInAdmin();
+        })->rules('required');
+        $form->file('image_src', __('Image src'));
+        $form->text('answer.answer_1', 'answer_1')->rules('required');
+        $form->text('answer.answer_2', 'answer_2')->rules('required');
+        $form->text('answer.answer_3', 'answer_3')->rules('required');
+        $form->text('answer.answer_4', 'answer_4')->rules('required');
+        $form->select('answer.correct_answer_no', 'correct_answer_no')->options(function () {
+            return (new Answer)->find4AnswersSelectBoxInAdmin();
+        })->rules('required');
+        $form->textarea('answer.commentary', 'commentary')->rules('required');
 
         return $form;
     }
