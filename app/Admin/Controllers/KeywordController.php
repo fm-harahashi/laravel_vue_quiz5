@@ -3,6 +3,7 @@
 namespace App\Admin\Controllers;
 
 use App\Keyword;
+use App\Category;
 use Encore\Admin\Controllers\AdminController;
 use Encore\Admin\Form;
 use Encore\Admin\Grid;
@@ -15,7 +16,7 @@ class KeywordController extends AdminController
      *
      * @var string
      */
-    protected $title = 'Keyword';
+    protected $title = 'App\Keyword';
 
     /**
      * Make a grid builder.
@@ -24,13 +25,13 @@ class KeywordController extends AdminController
      */
     protected function grid()
     {
-        $grid = new Grid(new Keyword());
+        $grid = new Grid(new Keyword);
 
         $grid->column('id', __('Id'));
         $grid->column('initial', __('Initial'));
         $grid->column('keyword', __('Keyword'));
         $grid->column('description', __('Description'));
-        $grid->column('categories_id', __('Categories id'));
+        $grid->column('category.name', __('Categories name'));
         $grid->column('created_at', __('Created at'));
         $grid->column('updated_at', __('Updated at'));
 
@@ -51,9 +52,12 @@ class KeywordController extends AdminController
         $show->field('initial', __('Initial'));
         $show->field('keyword', __('Keyword'));
         $show->field('description', __('Description'));
-        $show->field('categories_id', __('Categories id'));
         $show->field('created_at', __('Created at'));
         $show->field('updated_at', __('Updated at'));
+
+        $show->category('Category information', function ($category) {
+            $category->name();
+        });
 
         return $show;
     }
@@ -65,12 +69,14 @@ class KeywordController extends AdminController
      */
     protected function form()
     {
-        $form = new Form(new Keyword());
+        $form = new Form(new Keyword);
 
         $form->text('initial', __('Initial'));
         $form->text('keyword', __('Keyword'));
         $form->textarea('description', __('Description'));
-        $form->number('categories_id', __('Categories id'));
+        $form->select('categories_id', 'カテゴリー')->options(function () {
+            return (new Category)->findCategorySelectBoxInAdmin();
+        })->rules('required');
 
         return $form;
     }
