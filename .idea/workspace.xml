@@ -19,9 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a7c9e70-c9f0-4f52-b640-de087aebe972" name="Default Changelist" comment="12-4 herokuデプロイのため全てのファイルをコミット対象にしました。">
-      <change afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="5a7c9e70-c9f0-4f52-b640-de087aebe972" name="Default Changelist" comment="add index.php">
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,14 +197,7 @@
       <workItem from="1607772884162" duration="44733000" />
       <workItem from="1608372455621" duration="5695000" />
       <workItem from="1608467641589" duration="11280000" />
-      <workItem from="1608594804013" duration="34546000" />
-    </task>
-    <task id="LOCAL-00069" summary="9-5　マイページの作成 -API認証の連携- 日付のフォーマットの編集">
-      <created>1608469565374</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1608469565374</updated>
+      <workItem from="1608594804013" duration="34807000" />
     </task>
     <task id="LOCAL-00070" summary="9-6　キーワード画面の作成 -Databaseの設定- マイグレーションファイルの作成">
       <created>1608470336598</created>
@@ -543,7 +535,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609772416355</updated>
     </task>
-    <option name="localTasksCounter" value="118" />
+    <task id="LOCAL-00118" summary="add index.php">
+      <created>1609773388615</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1609773388615</updated>
+    </task>
+    <option name="localTasksCounter" value="119" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -563,7 +562,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="10-3　マイページ画面の調整 Laravelルーティングでのmiddleware導入" />
     <MESSAGE value="10-4 ホーム画面の調整 全項目チェックONボタンの実装" />
     <MESSAGE value="10-5 ルーティング・Viewファイルの共有化 web.phpの編集" />
     <MESSAGE value="10-6 ソーシャルシェア機能の調整 -ogpの導入- ogpの導入" />
@@ -588,7 +586,8 @@
     <MESSAGE value="12-4 事前準備ファイル整理 -ファイル整理・デプロイ用設定確認-　本番用設定ファイル準備　.htaccessを編集" />
     <MESSAGE value="12-4 事前準備ファイル整理 -ファイル整理・デプロイ用設定確認-　本番用設定ファイル準備　AppServiceProvider.phpを編集" />
     <MESSAGE value="12-4 herokuデプロイのため全てのファイルをコミット対象にしました。" />
-    <option name="LAST_COMMIT_MESSAGE" value="12-4 herokuデプロイのため全てのファイルをコミット対象にしました。" />
+    <MESSAGE value="add index.php" />
+    <option name="LAST_COMMIT_MESSAGE" value="add index.php" />
   </component>
   <component name="WindowStateProjectService">
     <state width="866" height="374" key="GridCell.Tab.0.bottom" timestamp="1608467607716">
